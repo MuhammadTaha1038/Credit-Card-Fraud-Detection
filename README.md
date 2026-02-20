@@ -34,10 +34,13 @@ Credit-Card-Fraud-Detection/
 │   ├── slide2_pr_curve.png           # Precision-Recall curve visualization
 │   └── slide3_threshold_tradeoff.png # Threshold trade-off analysis plot
 ├── data/
-│   └── creditcard.csv                # Dataset (download from Kaggle)
+│   └── creditcard.csv                # ⚠️ Not tracked in git — download from Kaggle
+├── .gitignore                        # Excludes large dataset file
 ├── notebook.ipynb                    # Main analysis notebook
 └── README.md                         # This file
 ```
+
+> ⚠️ **Note:** `data/creditcard.csv` is excluded from this repository due to GitHub's 100 MB file size limit (the file is ~144 MB). Download it from [Kaggle](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) and place it inside the `data/` folder before running the notebook.
 
 ---
 
