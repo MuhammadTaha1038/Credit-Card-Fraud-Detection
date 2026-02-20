@@ -1,5 +1,8 @@
-# 💳 Credit Card Fraud Detection — Business-Driven Logistic Regression
+#  **Credit Card Fraud Detection — Business-Driven Logistic Regression**
 
+<p align="center">
+  <img src="assets/banner.png" alt="Customer Segmentation Dashboard" width="800"  style="border: 2px solid black; border-radius: 5px;" />
+</p>
 A complete end-to-end fraud detection project using **Logistic Regression** on the Kaggle Credit Card Fraud dataset. This notebook goes beyond model accuracy — it focuses on **business interpretability**, **cost-sensitive threshold optimization**, and **real-world deployment considerations**.
 
 ---
@@ -36,6 +39,7 @@ Credit-Card-Fraud-Detection/
 ├── data/
 │   └── creditcard.csv                # ⚠️ Not tracked in git — download from Kaggle
 ├── .gitignore                        # Excludes large dataset file
+├── requirements.txt                  # Python dependencies
 ├── notebook.ipynb                    # Main analysis notebook
 └── README.md                         # This file
 ```
