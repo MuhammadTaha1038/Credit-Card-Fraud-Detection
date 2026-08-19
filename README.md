@@ -1,18 +1,18 @@
-#  **Credit Card Fraud Detection — Business-Driven Logistic Regression**
+#  **Credit Card Fraud Detection: Business-Driven Logistic Regression**
 
 <p align="center">
   <img src="assets/banner.png" alt="Customer Segmentation Dashboard" width="800"  style="border: 2px solid black; border-radius: 5px;" />
 </p>
-A complete end-to-end fraud detection project using **Logistic Regression** on the Kaggle Credit Card Fraud dataset. This notebook goes beyond model accuracy — it focuses on **business interpretability**, **cost-sensitive threshold optimization**, and **real-world deployment considerations**.
+A complete end-to-end fraud detection project using **Logistic Regression** on the Kaggle Credit Card Fraud dataset. This notebook goes beyond model accuracy, it focuses on **business interpretability**, **cost-sensitive threshold optimization**, and **real-world deployment consideration**.
 
 ---
 
 ## 🎯 Project Objective
 
 Build a fraud detection classifier that is:
-- **Interpretable** — coefficients explainable to regulators & compliance teams
-- **Business-aligned** — threshold tuned for real-world cost asymmetry (missed fraud vs. false alarms)
-- **Production-aware** — evaluated using metrics that matter, not just accuracy
+- **Interpretable**: coefficients explainable to regulators & compliance teams
+- **Business-aligned**:  threshold tuned for real-world cost asymmetry (missed fraud vs. false alarms)
+- **Production-aware**: evaluated using metrics that matter, not just accuracy
 
 ---
 
@@ -68,23 +68,23 @@ Credit-Card-Fraud-Detection/
 
 ## 💡 Key Business Insights
 
-1. **Accuracy is misleading** — A naive model predicting all transactions as legitimate achieves 99.83% accuracy but catches zero fraud.
+1. **Accuracy is misleading**: A naive model predicting all transactions as legitimate achieves 99.83% accuracy but catches zero fraud.
 
-2. **Threshold is a business decision** — The optimal cutoff depends on `Cost(Missed Fraud) / Cost(False Alarm)`, not on statistical defaults.
+2. **Threshold is a business decision**: The optimal cutoff depends on `Cost(Missed Fraud) / Cost(False Alarm)`, not on statistical defaults.
 
-3. **Class weighting alone is insufficient** — `class_weight='balanced'` must be paired with threshold tuning and proper metric selection.
+3. **Class weighting alone is insufficient**: `class_weight='balanced'` must be paired with threshold tuning and proper metric selection.
 
-4. **Interpretability drives adoption** — Logistic Regression was chosen over black-box models because banking regulators require explainability.
+4. **Interpretability drives adoption**: Logistic Regression was chosen over black-box models because banking regulators require explainability.
 
 ---
 
 ## 🛠️ Tech Stack
 
 - **Python 3.x**
-- **pandas** — data manipulation
-- **scikit-learn** — modeling, metrics, preprocessing
-- **matplotlib / seaborn** — visualization
-- **numpy** — numerical operations
+- **pandas**: data manipulation
+- **scikit-learn**: modeling, metrics, preprocessing
+- **matplotlib / seaborn**: visualization
+- **numpy**: numerical operations
 
 ---
 
@@ -127,7 +127,7 @@ jupyter notebook notebook.ipynb
 
 ## 📝 Dataset Information
 
-- **Source:** [Kaggle — Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+- **Source:** [Kaggle: Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
 - **Transactions:** 284,807 (made by European cardholders in September 2013)
 - **Fraud cases:** 492 (0.172%)
 - **Features:** `V1-V28` (PCA-transformed), `Time`, `Amount`, `Class`
